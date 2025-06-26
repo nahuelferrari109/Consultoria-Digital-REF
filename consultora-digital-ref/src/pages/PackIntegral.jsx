@@ -1,9 +1,10 @@
 import ServiceCard from "../components/ServiceCard";
+import { Link } from "react-router-dom";
 
 function PackIntegral(){
     return(
         <div style={{ padding: '20px' }}>
-            <h1>PAck Integral REF</h1>
+            <h1>Pack Integral REF</h1>
 
             <h2>Pack Inicial</h2>
             <ul>
@@ -35,6 +36,9 @@ function PackIntegral(){
             title="Pack Premium Integral"
             description="El pack Premium contiene: Pagina Web Personalizada + Mantemiento mensual + Optimizacion + Marketing full + Reparaciones de PC"
             />
+            <Link to={`/contacto?servicio=${encodeURIComponent("Pack Integral")}`} className = "btn btn-primary">
+            consultar
+            </Link>
                 </div>
         </div>
     )

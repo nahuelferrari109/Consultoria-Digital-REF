@@ -1,4 +1,5 @@
 import ServiceCard from "../components/ServiceCard";
+import { Link } from "react-router-dom";
 
 function Marketing(){
     return(
@@ -31,6 +32,9 @@ function Marketing(){
             title="Pack Intermedio Marketing"
             description="Ideal para mostrar tus servicios o productos de manera simple y rápida."
             />
+             <Link to={`/contacto?servicio=${encodeURIComponent("Marketing")}`} className = "btn btn-primary">
+            consultar
+            </Link>
                 </div>
             
         </div>

@@ -1,5 +1,5 @@
 import ServiceCard from "../components/ServiceCard";
-
+import { Link } from "react-router-dom";
 function Programacion(){
     return(
         <div className="container mt-5">
@@ -19,7 +19,10 @@ function Programacion(){
             title="Pagina Web + Mantenimiento + Optimizacion"
             description="Ideal para mostrar tus servicios o productos de manera simple y rápida."
             />
-
+         
+         <Link to={`/contacto?servicio=${encodeURIComponent("Programacion")}`} className = "btn btn-primary">
+            consultar
+            </Link>
 
         </div>
     )

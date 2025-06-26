@@ -9,12 +9,14 @@ import Marketing from './pages/Marketing'
 import PackIntegral from './pages/PackIntegral'
 import Nosotros from './pages/Nosotros'
 import Contacto from './pages/Contacto'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
    <BrowserRouter>
    <Navbar/>
+   <div className='main-content'>
    <Routes>
     <Route path='/' element={<Home />} />
     <Route path='/programacion' element={<Programacion />} />
@@ -24,6 +26,8 @@ function App() {
     <Route path='/contacto' element={<Contacto />} />
 
    </Routes>
+   </div>
+   <Footer/>
    </BrowserRouter>
 
   )
